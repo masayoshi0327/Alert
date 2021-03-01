@@ -46,7 +46,8 @@ struct ContentView: View {
                 .padding()
                 // noGoodAlertがtrueになると呼び出されるアラート
                 .alert(isPresented: $noGoodAlert, content: {
-                    Alert(title: Text("そんなこと言わないで"))
+                    Alert(title: Text("そんなこと言わないで"),
+                          dismissButton: .default(Text("了解です")))
                 })
         }
     }
